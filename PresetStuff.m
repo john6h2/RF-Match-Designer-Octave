@@ -19,10 +19,7 @@ function PresetStuff(h,s,r,back_F)
     presetsF=get(h.enable_presets_checkbox,"value");
     zA_match=get(h.match_2_zA_checkbox,"value");
     advF=get(h.advanced_enable_checkbox, "value");
-    if (zA_match==0)
-      set(h.advanced_enable_checkbox,"value",0);  %turn off advanced_enable_checkbox
- %     set(h.advanced_enable_checkbox,"visible","off");
-    endif
+
   %%IF last type was jx, change to jb and vice versa. IF preset checkbox
     if (presetsF)
         if(s(r).type==1)
