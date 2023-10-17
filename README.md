@@ -4,4 +4,5 @@ An RF matching tool, featuring T or $\Pi$ &nbsp;   Q Selecting Networks in yz Sm
 ![Alt](https://github.com/john6h2/RF-Match-Designer-Octave/blob/main/Screenshot_20231012_005042.png)
 
 ### User Guide
-For non Q selecting matching networks
+For non Q selecting matching networks, enter the load impedance, and the target reflection coefficent
+
