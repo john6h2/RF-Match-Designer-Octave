@@ -13,4 +13,4 @@ For non Q selecting matching networks, enter the load impedance, and the target 
 The calculated shunt admittance is shown below the load impedance, the reflection coefficent looking into the load plus the most recent designed stage, zIN, and yIN are displayed at the lower left.  In this example the magnitude of the reflection coefficent shown as |GIN|=  $|\Gamma_{target}|$  the Magnitude of Gs/GL. 
 A line displacement is neccessary now, a movement along the circle, to get to the target.
 ![Alt](https://github.com/john6h2/RF-Match-Designer-Octave/blob/main/Docs/images/nonadv3.png)
-The sketch, illustrates the output table, the output parameters listed in the table correspond to elements from zL to the targeted reflection coefficent.
+<p>The sketch, illustrates the output table, the output parameters listed in the table correspond to elements from zL to the targeted reflection coefficent.</p>
