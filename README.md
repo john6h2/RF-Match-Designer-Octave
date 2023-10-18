@@ -20,3 +20,4 @@ A line displacement is neccessary now, a movement along the circle, to get to th
 
 ![Alt](https://github.com/john6h2/RF-Match-Designer-Octave/blob/main/Docs/images/nonadv3.png)
 <p>The sketch, illustrates the output table, the output parameters listed in the table correspond to elements from zL to the targeted reflection coefficent.</p>
+<p> A shunt admittance, line displacement is one way to match.  The match may also be achieved with a $\frac{\lambda}{4}$ and a line displacement  Go Back One Pushbutton</p>
