@@ -20,4 +20,8 @@ A line displacement is neccessary now, a movement along the circle, to get to th
 
 ![Alt](https://github.com/john6h2/RF-Match-Designer-Octave/blob/main/Docs/images/nonadv3.png)
 <p>The sketch, illustrates the output table, the output parameters listed in the table correspond to elements from zL to the targeted reflection coefficent.</p>
-<p> A shunt admittance, line displacement is one way to match.  The match may also be achieved with a $\frac{\lambda}{4}$ and a line displacement  Hit the Go Back One Pushbutton twice to start over</p>
+<p> A shunt admittance, line displacement is one way to match.  The match may also be achieved with a $\frac{\lambda}{4}$ and a line displacement  Hit the Go Back One Pushbutton twice to start over.  You can see if a $\frac{\lambda}{4}$ match exists by selecting the Wave/4 in the popup menu, and hitting design.  At the moment a 50 $\Omega$ line is assumed. </p>  
+
+![](https://github.com/john6h2/RF-Match-Designer-Octave/blob/main/Docs/images/nonadv4.png)
+
+<p>A line displacement</p>
