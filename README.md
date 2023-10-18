@@ -6,8 +6,8 @@ An RF matching tool, featuring T or $\Pi$ &nbsp;   Q Selecting Networks in yz Sm
 ![Alt](https://github.com/john6h2/RF-Match-Designer-Octave/blob/main/Screenshot_20231012_005042.png)
 
 ### User Guide
-#### Non Advanced Example
-<p> In <b>all</b> cases a dialog box will confirm you have matched, in advanced mode depending on the location of the current $z_{IN}$ both choices of sign may result in two positive solutions for reactance jx or jb, or both negative.  Sometimes the complex conjugate wrt the v=0 axis will show up.  Using the Go Back One pushbutton, and trying the other sign will sometimes be neccessary.</p> 
+
+<p> In <b>all</b> cases a dialog box will confirm you have matched, in advanced mode depending on the location of the current $z_{IN}$ both choices of sign may result in two positive solutions for reactance jx or jb, or both negative.  Sometimes the complex conjugate of the reflection coefficent will be solved for.  If that happens, use the Go Back One pushbutton, and choose the other sign.</p> 
 
 For non Q selecting matching networks, enter the load impedance, and the target reflection coefficent
 ![Alt](https://github.com/john6h2/RF-Match-Designer-Octave/blob/main/Docs/images/nonadv1.png)
