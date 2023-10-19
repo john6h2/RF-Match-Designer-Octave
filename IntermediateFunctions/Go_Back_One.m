@@ -42,7 +42,11 @@ function r=Go_Back_One(h,s,r,Gt,zL)
                     endswitch
                 case 3
                     %[s(m).Gt, s(m).z, s(m).out]=
-                    Match_Quarter_Wave(s(m-1).Gt,s(m-1).z,s(m-1).sign);
+                    if (s(m-1).num==3)
+                      Match_Quarter_Wave(s(m-1).Gt,s(m-1).z,s(m-1).sign);
+                    elseif(s(m-1).num==4)
+                      Match_Quarter_Wave(s(m-1).Gt,s(m-1).z,s(m-1).sign,1);
+                    endif
                 case 4
                     if (s(m).num==2)
                       %[s(m).Gt, s(m).z, s(m).out]=

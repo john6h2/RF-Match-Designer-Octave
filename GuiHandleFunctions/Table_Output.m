@@ -26,8 +26,10 @@ function  Table_Output(h,s,r,zL)
     case(4)
       v=sprintf("line of l=%.3f",s(r).out);
     case (5)
-      v=sprintf("series jx=%.3f", s(r).out);
+      v=sprintf("series l=%.3f", s(r).out);
     case (6)
+      v=sprintf ("shunt jx=%.3f", s(r).out);
+    case(7)
       v=sprintf ("shunt jb=%.3f", s(r).out);
   endswitch
 

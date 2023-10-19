@@ -109,6 +109,9 @@ if (zA_match==0)
 [s(r+1).Gt, s(r+1).z, s(r+1).out] = Match_Shunt_b(s(r).Gt,s(r).z,s(r).sign,s(r).Q,s(r).circle);
                   s(r+1).num=5;  %record the number of arguments
               else
+                  if (s(r).type==3)&&(s(r).num==4)
+                    s(r).Gt=Gt;
+                  endif
 [s(r+1).Gt, s(r+1).z, s(r+1).out] = Match_Shunt_b(s(r).Gt,s(r).z,s(r).sign);
                   s(r+1).num=3;  %record the number of arguments
               endif
@@ -121,14 +124,24 @@ if (zA_match==0)
           try
 [s(r+1).Gt, s(r+1).z, s(r+1).out] =  Match_Quarter_Wave(s(r).Gt,s(r).z,s(r).sign);
               s(r+1).type=3;
+              s(r+1).num=3;
           catch
               errordlg("No solution for Quarter Wave transformer for this refl coef, z");
               r=r-1;
           end_try_catch
-      case 4  % design matched line displacement
+      case 4  %design lamda/4 transformer to hit g_circle of target Gs/GL
+          try
+ [s(r+1).Gt, s(r+1).z, s(r+1).out] =  Match_Quarter_Wave(s(r).Gt,s(r).z,s(r).sign,1);
+           s(r+1).type=3;
+           s(r+1).num=4;
+          catch
+            errordlg ("No solution for Quarter Wave this sign an Reflection Coefficent");
+          end_try_catch
+
+      case 5  % design matched line displacement
           try
 [s(r+1).Gt,s(r+1).z, s(r+1).out] = Match_Line_Displacement(s(1).Gt,s(r).Gt);
-              s(r+1).type=4;
+              s(r+1).type=5;
               s(r+1).num=2;
           catch
               r=r-1;
@@ -140,11 +153,11 @@ elseif (zA_match==1) %Match FROM zA to
         switch (menu_val)
           case(1)
               [s(r+1).Gt, s(r+1).z, s(r+1).out]= Set_Target_x( zL, s(r).z, s(r).sign);
-              s(r+1).type=5;
+              s(r+1).type=6;
               s(r+1).num=3;
           case(2)
               [s(r+1).Gt, s(r+1).z, s(r+1).out]= Set_Target_b( zL, s(r).z, s(r).sign);
-              s(r+1).type=6;
+              s(r+1).type=7;
               s(r+1).num=3;
           case(3)
               [s(r+1).Gt,s(r+1).z, s(r+1).out] = Match_Line_Displacement(s(1).Gt,s(r).Gt,real(1/zL));

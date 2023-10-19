@@ -231,6 +231,7 @@ endswitch
             ReDraw(s,r,Gt,zL);
       endif
 %%%%CALCULATE Gt_adv    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ %     if ~isempty(G
       if (advF*G_T_flag)
           [s,Gt_adv]=Calc_Gt_adv(h,s,r,Gt,zL);
           Plot_Circle(0,Gt_adv);
@@ -422,7 +423,7 @@ h.z_in_element_select_popup = uicontrol  ("visible", "off","style", "popupmenu",
                                           "position", [0.30 0.30 0.25 0.05]);
 h.element_select_popup = uicontrol  ("style", "popupmenu", "units",
                                       "normalized","string", ...
- {"Series Reactance jx", "Shunt Admitance jb", "Wave/4 Tx", "Line displacement"},
+ {"Series Reactance jx", "Shunt Admitance jb", "Wave/4 Tx", "L/4 to g", "Line displacement"},
                                       "callback", @update_plot,
                                       "position", [0.30 0.30 0.25 0.05]);
 

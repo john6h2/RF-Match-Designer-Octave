@@ -21,13 +21,15 @@
 
 %     John Hawkins - (09-08-2023)
 %function [G_OUT,z_in, Z0x] =Match_Quarter_Wave(G_target,s,zk)
-function [G_OUT,z_in, Z0x] =Match_Quarter_Wave(G_target,zk,s)
+function [G_OUT,z_in, Z0x] =Match_Quarter_Wave(G_target, zk, s, g_flag)
       yk=1/zk;
-      if nargin==2;
-        yk=1;
+      gk=real(yk);
+      if nargin==4
+        if (g_flag==1)    %match to the condunductance circle of G_target
+          g_circle=real(G2y(G_target));
+          G_target=y2G(g_circle);
+        end
       endif
-        gk=real(yk);
-
 
           if s== '+'
               a= gk*(1+abs(G_target)^2)/(abs(yk)^2*(1-abs(G_target)^2));

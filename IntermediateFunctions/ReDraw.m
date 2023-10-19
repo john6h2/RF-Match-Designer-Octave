@@ -36,16 +36,27 @@ function ReDraw(s,r,Gt,zL)
                     Match_Shunt_b(s(m-1).Gt,s(m-1).z,s(m-1).sign,s(m-1).Q,s(m-1).circle);
                   endswitch
               case 3
-                Match_Quarter_Wave(s(m-1).Gt,s(m-1).z,s(m-1).sign);
+                  switch(s(m).num)
+                    case(3)
+                      Match_Quarter_Wave(s(m-1).Gt,s(m-1).z,s(m-1).sign);
+                    case(4)
+                      Match_Quarter_Wave(s(m-1).Gt,s(m-1).z,s(m-1).sign,1);
+                  endswitch
               case 4
-                if (s(m).num==2)
+                    if (s(m).num==2)
                       Match_Line_Displacement(Gt,s(m-1).Gt);
                     elseif (s(m).num==3)
                       Match_Line_Displacement(Gt,3,real(1/zL));
                     endif
               case 5
-                 Set_Target_x( zL, s(m-1).z, s(m-1).sign);
+                    if (s(m).num==2)
+                      Match_Line_Displacement(Gt,s(m-1).Gt);
+                    elseif (s(m).num==3)
+                      Match_Line_Displacement(Gt,3,real(1/zL));
+                    endif
               case 6
+                 Set_Target_x( zL, s(m-1).z, s(m-1).sign);
+              case 7
                  Set_Target_b( zL, s(m-1).z, s(m-1).sign);
             endswitch
           endfor
