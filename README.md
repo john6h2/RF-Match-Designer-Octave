@@ -11,7 +11,7 @@ An RF matching tool, featuring T or $\Pi$ &nbsp;   Q Selecting Networks in yz Sm
 
 For non Q selecting matching networks, enter the load impedance, and the target reflection coefficent
 ![Alt](https://github.com/john6h2/RF-Match-Designer-Octave/blob/main/Docs/images/nonadv1.png)
- <p> Push the Enter/Update button after entering $z_{L}$ and $\Gamma_{target}$ shown as Gs/GL, for this example, a shunt capacitance is chosen by selecting the + sign for a positive admmitance, the parrallel reactance $jx=\frac{1}{jb}$ </p>
+ <p> <b>Push the Enter/Update button after entering </b>$z_{L}$ and $\Gamma_{target}$   shown as Gs/GL, for this example, a shunt capacitance is chosen by selecting the + sign for a positive admmitance, the parrallel reactance $jx=\frac{1}{jb}$ </p>
  
 ![Alt](https://github.com/john6h2/RF-Match-Designer-Octave/blob/main/Docs/images/nonadv2.png)
 <p>
@@ -26,3 +26,4 @@ A line displacement is neccessary now, a movement along the circle, to get to th
 
 <p>As in the last example, a line displacement will achive a match</p>
 
+![](https://github.com/john6h2/RF-Match-Designer-Octave/blob/main/Docs/images/nonadv5.png)
