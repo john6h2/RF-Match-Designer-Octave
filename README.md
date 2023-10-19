@@ -24,5 +24,5 @@ A line displacement is neccessary now, a movement along the circle, to get to th
 
 ![](https://github.com/john6h2/RF-Match-Designer-Octave/blob/main/Docs/images/nonadv4.png)
 
-<p>A line displacement will achive a match</p>
+<p>As in the last example, a line displacement will achive a match</p>
 
