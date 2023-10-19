@@ -33,8 +33,6 @@ function  Table_Output(h,s,r,zL)
       v=sprintf ("shunt jb=%.3f", s(r).out);
   endswitch
 
-
-
       switch(r)
         case (1)
               if ~isempty(zL)
