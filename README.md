@@ -35,6 +35,7 @@ A line displacement is neccessary now, a movement along the circle, to get to th
 <p> This is a usefull technique in stripline matching.  Hit the show g/r checkbox and you can see the target of the match.  </p>
 
 ![](https://github.com/john6h2/RF-Match-Designer-Octave/blob/main/Docs/images/newL4_2.png)
-<p> A negative sign, a shunt inductance, negative addmittance being positive reactance would complete the match with one more element.  In this example, a lowpass solution is implemented, by choosing the + menue on the sign selection. </p>
+<p> A negative sign, a shunt inductance, negative addmittance being positive reactance would complete the match with one more element.  In this example, a lowpass solution is implemented, by choosing the + menue on the sign selection followed by a line Displacement. </p>
 
-![](https://github.com/john6h2/RF-Match-Designer-Octave/blob/main/Docs/images/newL4_3.png)
+![](https://github.com/john6h2/RF-Match-Designer-Octave/blob/main/Docs/images/newL4_4.png)
+
