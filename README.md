@@ -27,3 +27,6 @@ A line displacement is neccessary now, a movement along the circle, to get to th
 <p>As in the last example, a line displacement will achive a match</p>
 
 ![](https://github.com/john6h2/RF-Match-Designer-Octave/blob/main/Docs/images/nonadv5.png)
+
+<p> The L/4 to g selection on the popup menue, will set up for an $\lambda$/4 design targeting the constant conductance corresponding to   $\Gamma_{target}$     </p>
+
