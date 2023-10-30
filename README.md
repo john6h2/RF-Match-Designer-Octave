@@ -41,7 +41,8 @@ A line displacement is neccessary now, a movement along the circle, to get to th
 
 #### Using Advanced Mode
 <p>
-By selecting the advanced mode checkbox, you can design T or $\Pi$ matching network.  The default is Preselect On, this alternates between series jx and shunt jb for the following example a T network of a specified Q is designed.  </p>
+By selecting the advanced mode checkbox, you can design T or $\Pi$ matching network.  The preselect checkbox is enabled by default, this alternates between series jx and shunt jb for the following example a T network of a specified Q is designed.  A Lowpass T network is designed by setting the popup menu to jx as shown below. </p>
 
+![](https://github.com/john6h2/RF-Match-Designer-Octave/blob/main/Docs/images/advT1.png)
 
 
