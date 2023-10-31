@@ -53,4 +53,11 @@ By selecting the advanced mode checkbox, you can design T or $\Pi$ matching netw
 
 ![](https://github.com/john6h2/RF-Match-Designer-Octave/blob/main/Docs/images/advT3.png)
 
+<p>Hitting the design pushbutton again completes a the T match with the specified load Q.</p>
+
+![](https://github.com/john6h2/RF-Match-Designer-Octave/blob/main/Docs/images/advT4.png)
+
+
+
+
 
