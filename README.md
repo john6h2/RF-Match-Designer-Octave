@@ -45,4 +45,8 @@ By selecting the advanced mode checkbox, you can design T or $\Pi$ matching netw
 
 ![](https://github.com/john6h2/RF-Match-Designer-Octave/blob/main/Docs/images/advT1.png)
 
+<p>Hit the Design pushbutton to design the first branch. </p>
+
+![](https://github.com/john6h2/RF-Match-Designer-Octave/blob/main/Docs/images/advT2.png)
+
 
