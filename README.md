@@ -49,4 +49,8 @@ By selecting the advanced mode checkbox, you can design T or $\Pi$ matching netw
 
 ![](https://github.com/john6h2/RF-Match-Designer-Octave/blob/main/Docs/images/advT2.png)
 
+<p>With the preslection on, the program automatically switches to a shunt element. </p>
+
+![](https://github.com/john6h2/RF-Match-Designer-Octave/blob/main/Docs/images/advT3.png)
+
 
